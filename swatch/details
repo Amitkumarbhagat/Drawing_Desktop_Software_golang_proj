@@ -1,0 +1,4 @@
+//base functionality and state for all widgets
+(size position etc)
+initialized with widget extendBaseWidget
+create the renderer which defines how the widget looks
