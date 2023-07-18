@@ -12,6 +12,7 @@ type PxCanvasConfig struct {
 	DrawingArea    fyne.Size
 	CanvasOffset   fyne.Position
 	PxRows, PxCols int
+	PxSize         int
 }
 
 type State struct {
