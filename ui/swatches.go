@@ -3,6 +3,7 @@ package ui
 import (
 	"PIXL/swatch"
 	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/container"
 	"image/color"
 )
 
@@ -21,6 +22,10 @@ func BuildSwatches(app *AppInit) *fyne.Container {
 		if i == 0 {
 			s.Selected = true
 			app.state.SwatchSelected = 0
+			s.Refresh()
 		}
+		app.Swatches = append(app.Swatches, s)
+		canvasSwatches = append(canvasSwatches, s)
 	}
+	return container.NewGridWrap(fyne.NewSize(20, 20), canvasSwatches...)
 }
