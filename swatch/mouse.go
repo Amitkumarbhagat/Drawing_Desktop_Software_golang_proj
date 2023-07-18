@@ -7,3 +7,7 @@ func (swatch *Swatch) MouseDown(ev *desktop.MouseEvent) {
 	swatch.Selected = true
 	swatch.Refresh()
 }
+
+func (swatch *Swatch) MouseUp(ev *desktop.MouseEvent) {
+
+}
